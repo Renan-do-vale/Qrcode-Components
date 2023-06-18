@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+  }
+
+  body {
+    background-image: url('./images/Modern-Blue-Web-Site-Background-Graphics-5332399-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .main {
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 700px;
+  }
+
+  .conteudo {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5%;
+    width: 300px;
+    height: 450px;
+  }
+
+  .conteudo img {
+    border-radius: 5%;
+    padding: 10px;
+  }
+  .texto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    font-family: 'Outfit', sans-serif;
+  }
+  .texto h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: hsl(218, 44%, 22%);
+  }
+  .texto p{
+    color: hsl(220, 15%, 55%);
+    font-size: 16px;
+    text-align: center;
+  }
+  .attribution {
+    font-size: 15px; 
+    text-align: left; 
+    color: white;
+  }
+    
+  .attribution a { color: red; }
+
+  @media (max-width: 412px) {    
+    .main {
+      width: 100%;
+      height: 100%; 
+    }
+
+    .conteudo {
+      width: 320px;
+      height: 470px;
+    }
+
+
+    .attribution {
+      display: none;
+    }
+  }
+
+  @media (orientation:landscape) and (max-height: 412px) {
+    body {
+      width: 100vw;
+      height: 100%;
+    }
+    .main {
+      width: 100%;
+      height: 100%;
+    }
+
+    .conteudo {
+      width: 30%;
+      height: 100%;
+      margin: 20px;
+    }
+    .texto{
+    padding: 10px;
+  }
+
+    .attribution {
+      display: none;
+    }
+  }
